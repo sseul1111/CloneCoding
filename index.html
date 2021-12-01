@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Mobile</title>
     <script src="https://kit.fontawesome.com/20ce03cac6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -24,78 +27,81 @@
         <video controls src="video/video.mp4"></video>
     </section>
     
-    <!-- Video Info -->
-    <section class="info">
-        <!-- Metadata -->
-        <div class="metadata">
-            <ul class="hashtags">
-                <li>#Travel</li>
-                <li>#Paris</li>
-                <li>#Strasbourg</li>
-            </ul>
-            <div class="titleAndButton">
-                <span class="title">
-                    Welcome! Strasbourg is a travel destination near Paris, where the entire old city is listed as a UNESCO World Heritage Site. Enjoy the beautiful scenery like a village in a fairy tale.
-                </span>
-                <button class="moreBtn">
-                    <i class="fas fa-caret-down"></i>
-                </button>
-            </div>
-            <div class="views">
+    <div class="infoAndUpNext">
+        <!-- Video Info -->
+        <section class="info">
+            <!-- Metadata -->
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>#Travel</li>
+                    <li>#Paris</li>
+                    <li>#Strasbourg</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title">
+                        Welcome! Strasbourg is a travel destination near Paris, where the   entire old city is listed as a UNESCO World Heritage Site. Enjoy the  beautiful scenery like a village in a fairy tale.
+                    </span>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
                 <span class="views">1M views 1 month ago</span>
             </div>
-        </div>
-        <!-- Actions -->
-        <ul class="actions">
-            <li><button><i class="fas fa-thumbs-up"></i></button></li>
-            <li><button><i class="fas fa-thumbs-down"></i></button></li>
-            <li><button><i class="fas fa-share"></i></button></li>
-            <li><button><i class="fas fa-plus"></i></button></li>
-            <li><button><i class="fab fa-font-awesome-flag"></i></button></li>
-        </ul>
-        <!-- Channel Description -->
-        <div class="channel">
-            <div class="metadata">
-                <img src="image/image01.jpg" alt="">
-                <div class="info">
-                    <span class="name">Traveler Nari</span>
-                    <span class="subscribers">1M subscribers</span>
+            <!-- Actions -->
+            <ul class="actions">
+                <li><button><i class="active fas fa-thumbs-up"></i><span>1K</span></button></   li>
+                <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+                <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+                <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+                <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></   button></li>
+            </ul>
+            <!-- Channel Description -->
+            <div class="channel">
+                <div class="metadata">
+                    <img src="image/image01.jpg" alt="">
+                    <div class="info">
+                        <span class="name">Traveler Nari</span>
+                        <span class="subscribers">1M subscribers</span>
+                    </div>
                 </div>
+                <button class="subscribe">subscribe</button>
             </div>
-            <button class="subscribe">subscribe</button>
-        </div>
-    </section>
-    <section class="UpNext">
-        <span class="title">Up next</span>
-        <ul>
-            <li class="item">
-                <img src="image/image03.jpg" alt="">
-                <div class="info">
-                    <span class="title">Malekon Beach in Cuba. You can see people sitting on the beach enjoying their leisure time.</span>
-                    <span class="channel">Traveler Nari</span>
-                    <span class="views">82K views</span>
-                </div>
-                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-            <li class="item">
-                <img src="image/image02.jpg" alt="">
-                <div class="info">
-                    <span class="title">Malekon Beach in Cuba. You can see people sitting on the beach enjoying their leisure time.</span>
-                    <span class="channel">Traveler Nari</span>
-                    <span class="views">82K views</span>
-                </div>
-                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-            <li class="item">
-                <img src="image/image04.jpg" alt="">
-                <div class="info">
-                    <span class="title">Malekon Beach in Cuba. You can see people sitting on the beach enjoying their leisure time.</span>
-                    <span class="channel">Traveler Nari</span>
-                    <span class="views">82K views</span>
-                </div>
-                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-        </ul>
-    </section>
+        </section>
+        <!-- Up Next -->
+        <section class="upNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <div class="img"><img src="image/image03.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">Malekon Beach in Cuba. You can see people sitting   on the beach enjoying their leisure time.</span>
+                        <span class="channel">Traveler Nari</span>
+                        <span class="views">82K views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/image02.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">Malekon Beach in Cuba. You can see people sitting   on the beach enjoying their leisure time.</span>
+                        <span class="channel">Traveler Nari</span>
+                        <span class="views">82K views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="image/image04.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">Malekon Beach in Cuba. You can see people sitting   on the beach enjoying their leisure time.</span>
+                        <span class="channel">Traveler Nari</span>
+                        <span class="views">82K views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    
 </body>
 </html>
