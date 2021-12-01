@@ -2,14 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Mobile</title>
+    <script src="https://kit.fontawesome.com/20ce03cac6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header></header>
-    <section class="player"></section>
-    <section class="info"></section>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">Youtube</span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+
+    <!-- Video Player -->
+    <section class="player">
+        <video controls src="video/video.mp4"></video>
+    </section>
+    
+    <!-- Video Info -->
+    <section class="info">
+        <!-- Metadata -->
+        <div class="metadata">
+            <ul class="hashtags">
+                <li>#Travel</li>
+                <li>#Paris</li>
+                <li>#Strasbourg</li>
+            </ul>
+            <div class="titleAndButton">
+                <span class="title">
+                    Welcome! Strasbourg is a travel destination near Paris, where the entire old city is listed as a UNESCO World Heritage Site. Enjoy the beautiful scenery like a village in a fairy tale.
+                </span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="views">
+                <span class="views">1M views 1 month ago</span>
+            </div>
+        </div>
+        <!-- Actions -->
+        <ul class="actions">
+            <li><button><i class="fas fa-thumbs-up"></i></button></li>
+            <li><button><i class="fas fa-thumbs-down"></i></button></li>
+            <li><button><i class="fas fa-share"></i></button></li>
+            <li><button><i class="fas fa-plus"></i></button></li>
+            <li><button><i class="fab fa-font-awesome-flag"></i></button></li>
+        </ul>
+        <div class="channel"></div>
+    </section>
     <section class="UpNext"></section>
 </body>
 </html>
