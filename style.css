@@ -98,7 +98,7 @@ body > .info {
   margin-right: var(--padding);
 }
 
-.info .metadata .titleAndButton .title .clamp {
+.info .metadata .titleAndButton .title.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -110,7 +110,7 @@ body > .info {
   transition: transform 300ms ease-in-out;
 }
 
-.info .metadata .titleAndButton .moreBtn .clicked {
+.info .metadata .titleAndButton .moreBtn.clicked {
   transform: rotate(180deg);
 }
 
@@ -125,11 +125,12 @@ body > .info {
   justify-content: space-around;
   margin: var(--padding) 0;
 }
-.info .info .actions button {
+.info .actions button {
   display: flex;
   flex-direction: column;
   font-size: var(--font-small);
   color: var(--grey-dark-color);
+  background-color: var(--white-color);
 }
 
 .info .actions button i {
@@ -179,6 +180,7 @@ body > .info {
   text-transform: uppercase;
   color: var(--red-color);
   font-size: var(--font-medium);
+  background-color: var(--white-color);
 }
 
 /* Up Next */
